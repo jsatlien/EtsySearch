@@ -4,8 +4,70 @@ section of the html!!! -->
 <html>
   <head>
     <title>whiskey-Etsy</title>
+    <link href="normalize.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
   </head>
   <body>
+    <nav class="topmenu">
+      <div id="searchbar">
+        <div id="searchbox">
+          <span id="logo">Etsy</span>
+          <span>
+            <input id="searchinput" type="text" size="35px" name="Search" placeholder="Search for items or shops"></input>
+            <button id="searchbutton">Search</button>
+          </span>
+        </div>
+        <div id="useroptions">
+            <span class="userlinks"><a href="#">Sell on Etsy</a><span>
+            <span class="userlinks"><a href="#">Register</a></span>
+            <span class="userlinks"><button name="button">Sign in</button></span>
+            <span class="userlinks" id="cart"><img src="cart.png" alt="cart"/></span>
+        </div>
+      </div>
+      <div class="navcategories">
+        <a class="navcat" href="#">Clothing &amp; Accessories</a>
+        <a class="navcat" href="#">Jewelry</a>
+        <a class="navcat" href="#">Craft Supplies &amp; Tools</a>
+        <a class="navcat" href="#">Weddings</a>
+        <a class="navcat" href="#">Entertainment</a>
+        <a class="navcat" href="#">Home &amp; Living</a>
+        <a class="navcat" href="#">Kids &amp; Baby</a>
+        <a class="navcat" href="#">Vintage</a>
+      </div>
+    </nav>
+    <div class="maincontainer">
+      <div class="resultcolumn">
+        <header><a href="#">All categories</a> > "whiskey" </header>
+      </div>
+      <div class="sidebar">
+        <div>Show results for:</div>
+        <ul class="resultcategories">All categories
+          <li><a href="#">Art &amp; Collectibles</a></li>
+          <li><a href="#">Weddings</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Paper &amp; Party Supplies</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Jewelry</a></li>
+          <li><a href="#">Craft Supplies &amp; Tools</a></li>
+          <li><a href="#">Bags &amp; Purses</a></li>
+          <li><a href="#">Bath &amp; Beauty</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Books, Movies &amp; Music</a></li>
+          <li><a href="#">Electronics &amp; Accessories</a></li>
+          <li><a href="#">Toys &amp; Games</a></li>
+          <li><a href="#">Pet Supplies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="subscribe">
+      <div id="toptrends">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</div>
+      <div class="emailbox">
+        <input type="text" name="email" placeholder="Enter your email"></input>
+      <button type="submit"><a href="#">Subscribe</a></button>
+      </div>
+    </div>
+
+
 
     <script src="jquery.js"></script>
     <script src="searchAPI.js"></script>
