@@ -3,11 +3,44 @@
   width: auto;
 }
 
+html {
+  padding-left: 10px;
+}
+
+#logo {
+  color: #F3641F;
+  font-size: 45px;
+  font-family: 'Rasa', serif;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+#searchbox {
+  margin-bottom: 30px;
+}
+
+#searchbutton {
+  background-color: #43B1C9;
+  border-style: none;
+  height: 33px;
+  width: 80px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 1px solid #3598B0;
+}
+
+#searchinput {
+  height: 35px;
+  width: 370px;
+  padding: 4px;
+  font-size: 14px;
+  margin-right: -7px;
+}
 
 #useroptions {
-  margin-top: -39px;
+  margin-top: -75px;
   float: right;
-
+  display: inline;
 }
 
 #searchbar {
@@ -43,6 +76,7 @@
     width: 80%;
     clear: none;
     float: right;
+    padding-left: 5px;
 
     header a {
       text-decoration: none;
@@ -96,8 +130,6 @@
 
   }
 
-
-
   .emailbox {
     margin: auto;
     margin-top: 30px;
@@ -106,4 +138,12 @@
     button a {
       text-decoration: none;
     }
+  }
+
+  .resultbox {
+    height: 245px;
+    width: 245px;
+    border: 1px solid grey;
+    margin:10px;
+    float: left;
   }
