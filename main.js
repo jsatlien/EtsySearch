@@ -1,15 +1,41 @@
 
 // item image, name, price, and storefront
-function renderSpace (searchList) {
-    for (count = 0; count < searchList.results.length; count++) {
-    var newHtml = `<div class="resultbox">
-              <img src="${searchlist.results[count].Images[0].url_fullxfull}" alt="itemimage"/>
-              <p>${searchlist.results[count].title}</p>
-              <div class="shopnameprice">
-                <span class="shopname">${searchlist.results[count].Shop.shop_name}</span>
-                <span class="price">$${searchlist.results[count].price}</span>
+function renderSpaces (listOfItems) {
+    for (var count = 0; count < listOfItems.results.length; count++) {
+    var resultHtml = `
+            <a href="${listOfItems.results[count].url}">
+            <div class="eachresult">
+              <img src="${listOfItems.results[count].Images[0].url_fullxfull}" alt="itemimage"/>
+              <div class="itemname">
+              <a href="${listOfItems.results[count].url}">${listOfItems.results[count].title}</a>
               </div>
-            </div>`
+              <div class="shopnameprice">
+                <span class="shopname">${listOfItems.results[count].Shop.shop_name}</span>
+                <span class="price">$${listOfItems.results[count].price}</span>
+              </div>
+            </div>
+            </a>`;
+              $(".resultbox").append(resultHtml);
     };
-    return newHtml;
 };
+
+
+renderSpaces(searchList);
+
+var addHTML = `
+<div class="heartcontainer">
+  <a href="#"><img src="heart.png" id="heart"alt="heart" /></a>
+  <a href="#"><img src="hamburger.png" id="burger"alt="burger" /></a>
+</div>
+              `;
+
+$(".eachresult").append(addHTML);
+
+// function heartBurger (event) {
+//     var target = event.currentTarget;
+//     console.log(target);
+//
+// };
+// 
+//
+// $(".eachresult").hover(heartBurger);

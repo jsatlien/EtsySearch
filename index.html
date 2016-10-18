@@ -1,5 +1,3 @@
-<!-- Dont forget to ignore the "Top categories for..."
-section of the html!!! -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -39,7 +37,48 @@ section of the html!!! -->
         <header><a href="#">All categories</a> > "whiskey" </header>
         <div class="resultbox">
         </div>
+        <div class="related">
+          <header>Related to <b>whiskey</b></header>
+          <div class="column">
+            <ul>
+              <li><a href="#">whiskey barrel</a></li>
+              <li><a href="#">whiskey decanter</a></li>
+              <li><a href="#">scotch</a></li>
+              <li><a href="#">whiskey stones</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+              <li><a href="#">jack daniels</a></li>
+              <li><a href="#">bourbon</a></li>
+              <li><a href="#">whiskey set</a></li>
+              <li><a href="#">whiskey decanter set</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+              <li><a href="#">gift for men</a></li>
+              <li><a href="#">beer</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pagescroll">
+          <span>
+            <button type="button" disabled id="arrowleft"> < </button>
+            <button type="button" id="current">1</button>
+            <button type="button" name="button">2</button>
+            <button type="button" name="button">3</button>
+            <button type="button" name="button">4</button>
+            <button type="button" name="button">5</button>
+            <button type="button" name="button">6</button>
+            <button type="button" name="button">7</button>
+            <button type="button" name="button">8</button>
+            <button type="button" disabled id="dots">...</button>
+            <button type="button" id="lastpage">250</button>
+            <button type="button" id="arrowright"> > </button>
 
+          </span>
+        </div>
       </div>
       <div class="sidebar">
         <div>Show results for:</div>
@@ -68,8 +107,6 @@ section of the html!!! -->
       <button type="submit"><a href="#">Subscribe</a></button>
       </div>
     </div>
-
-
 
     <script src="jquery.js"></script>
     <script src="searchAPI.js"></script>
