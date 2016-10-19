@@ -1,5 +1,4 @@
 
-// item image, name, price, and storefront
 function renderSpaces (listOfItems) {
     for (var count = 0; count < listOfItems.results.length; count++) {
     var resultHtml = `
@@ -30,12 +29,3 @@ var addHTML = `
               `;
 
 $(".eachresult").append(addHTML);
-
-// function heartBurger (event) {
-//     var target = event.currentTarget;
-//     console.log(target);
-//
-// };
-// 
-//
-// $(".eachresult").hover(heartBurger);

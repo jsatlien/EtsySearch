@@ -7,19 +7,19 @@
     <link href="style.css" rel="stylesheet"/>
   </head>
   <body>
-    <nav class="topmenu">
       <div id="searchbar">
-        <div id="searchbox">
           <span id="logo">Etsy</span>
-            <input id="searchinput" type="text" size="35px" name="Search" placeholder="Search for items or shops"></input>
-            <button id="searchbutton">Search</button>
-        </div>
-        <div id="useroptions">
-            <span class="userlinks"><a href="#">Sell on Etsy</a><span>
-            <span class="userlinks"><a href="#">Register</a></span>
-            <span class="userlinks"><button name="button">Sign in</button></span>
-            <span class="userlinks" id="cart"><img src="cart.png" alt="cart"/></span>
-        </div>
+            <input id="searchinput" type="text" size="35px" name="Search" placeholder="Search for items or shops">
+              <button id="searchbutton">Search</button>
+            </input>
+            <div id="useroptions">
+                <a class="userlinks" href="#">Sell on Etsy</a>
+                <a class="userlinks" href="#">Register</a>
+                <button class="userlinks" id="signin" name="button">Sign in</button>
+                <div id="cartbox">Cart
+                  <img id="cartpic" src="cart.png" alt="cart"/>
+                </div>
+          </div>
       </div>
       <div class="navcategories">
         <a class="navcat" href="#">Clothing &amp; Accessories</a>
@@ -34,7 +34,7 @@
     </nav>
     <div class="maincontainer">
       <div class="resultcolumn">
-        <header><a href="#">All categories</a> > "whiskey" </header>
+        <header><a href="#">All categories</a> > "whiskey" (31,889 Results)</header>
         <div class="resultbox">
         </div>
         <div class="related">
@@ -62,6 +62,8 @@
             </ul>
           </div>
         </div>
+        <p>Looking for shops? <a href="#">WhiskeyDogWares</a>, <a href="#">whiskeygingerco</a>, <a href="#">whiskeynweddingbells</a>. <a href="#">See more</a>.</p>
+
         <div class="pagescroll">
           <span>
             <button type="button" disabled id="arrowleft"> < </button>
@@ -83,6 +85,7 @@
       <div class="sidebar">
         <div>Show results for:</div>
         <ul class="resultcategories">All categories
+          <li><a href="#">Home &amp; Living</a></li>
           <li><a href="#">Art &amp; Collectibles</a></li>
           <li><a href="#">Weddings</a></li>
           <li><a href="#">Clothing</a></li>
@@ -102,10 +105,6 @@
     </div>
     <div class="subscribe">
       <div id="toptrends">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</div>
-      <div class="emailbox">
-        <input type="text" name="email" placeholder="Enter your email"></input>
-      <button type="submit"><a href="#">Subscribe</a></button>
-      </div>
     </div>
 
     <script src="jquery.js"></script>

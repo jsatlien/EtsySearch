@@ -11,16 +11,12 @@ html {
   background-color: #F5F5F1;
 }
 
+
 #logo {
   color: #F3641F;
-  font-size: 45px;
+  font-size: 46px;
   font-family: 'Rasa', serif;
   margin-right: 15px;
-  margin-top: 5px;
-}
-
-#searchbox {
-  margin-bottom: 30px;
 }
 
 #searchbutton {
@@ -31,6 +27,8 @@ html {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   border: 1px solid #3598B0;
+  position: absolute;
+  top: 29px;
 }
 
 #searchinput {
@@ -38,32 +36,69 @@ html {
   width: 370px;
   padding: 4px;
   font-size: 14px;
-  margin-right: -7px;
+  position: relative;
+  background-color: #FBFBF9;
 }
 
 #useroptions {
-  margin-top: -75px;
+  margin-top: 0px;
   float: right;
   display: inline;
+  margin-right: 10px;
 }
 
 #searchbar {
-  margin: 20px;
-  height: 40px;
-}
-.userlinks {
-  margin: 10px;
+  height: 80px;
+  width: 100%;
+  padding: 14px;
+  background-color: white;
 }
 
-#cart {
+.navcategories {
+  border: 1px solid lightgrey;
+}
+.userlinks {
+  margin: 7px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #4CB0C7;
+
+}
+
+
+
+#signin {
+  width: 65px;
+  height: 35px;
+  background-color: white;
+  color: #4CB0C7;
+  border: 1px solid #4CB0C7;
+  margin-left: 10px;
+}
+
+#cartbox {
+  height: 40px;
+  width: 35px;
   border-left: 1px solid grey;
+  position: relative;
+  display: inline-block;
+  padding-top: 35px;
+  padding-left: 15px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+#cartpic {
+  position: absolute;
+  top: 5px;
+  height: 23px;
+  width: 23px;
 }
 
 
 .maincontainer {
-  border: 1px solid black;
-  height: 2000px;
-  padding-top: 10px;
+  height: 2100px;
+  padding-top: 30px;
   padding-right: 20px;
 
   .sidebar {
@@ -71,21 +106,25 @@ html {
     margin-left: 25px;
     width: 240px;
     float: left;
-    border: 1px solid blue;
+    font-size: 14px;
   }
   .resultbox {
     width: 100%;
     padding: 0px;
   }
   .resultcolumn {
-    border: 1px solid red;
     height: 95%;
     width: 80%;
     clear: none;
     float: right;
-
+    header {
+      margin-left: 7px;
+      font-size: 14px;
+    }
     header a {
       text-decoration: none;
+      color: #4CB0C7;
+
     }
   }
 }
@@ -93,10 +132,12 @@ html {
 .resultcategories {
   margin-top: 10px;
   list-style: none;
-  border: 1px solid black;
+  background-color: white;
+  border: 1px solid lightgrey;
   height: 410px;
   width: 230px;
   padding: 10px;
+  font-size: 14px;
   li {
       margin: 5px;
       margin-bottom: 8px;
@@ -105,6 +146,7 @@ html {
         margin: 5px;
         text-decoration: none;
         color: #1692B3;
+        font-size: 14px;
       }
 
     }
@@ -113,8 +155,12 @@ html {
 
 .navcategories {
   clear: right;
-  margin: 15px auto;
   padding-left: 20px;
+  height: 45px;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+
 }
 
 .navcat {
@@ -122,6 +168,7 @@ html {
   margin-right: 10px;
   text-decoration: none;
   color: grey;
+  font-size: 15px;
 }
 
 .subscribe {
@@ -159,11 +206,12 @@ html {
     width: 245px;
     font-size: 12px;
     margin: 7px;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
     overflow: hidden;
     padding: 5px;
     text-overflow: ellipsis;
     position: relative;
+    background-color: white;
 
     img {
       margin: -5px;
@@ -182,13 +230,14 @@ html {
       }
     }
 
-    }
+  }
 
   .shopnameprice {
     margin: 5px 0px;
 
     .price {
       float: right;
+      color: #7ABE4A;
     }
   }
 
@@ -230,6 +279,38 @@ html {
     }
   }
 
+  .related {
+    margin-top: 20px;
+    font-size: 14px;
+    height: 150px;
+
+    ul {
+      padding-left: 0px;
+    }
+
+    ul a {
+      text-decoration: none;
+      color: #43B1C9;
+      margin: 5px 10px;
+      font-size: 13px;
+      font-weight: bolder;
+
+    }
+
+    ul li {
+      margin: 10px 0px;
+    }
+
+  }
+  p {
+    font-size: 14px;
+    margin-left: 7px;
+    a {
+    text-decoration: none;
+    color: #1692B3;
+    }
+  }
+
   .heartcontainer {
     position: absolute;
     top: 5px;
@@ -240,7 +321,7 @@ html {
       background-color: #DBD9D9;
     }
     #burger:hover {
-      background-color: #DBD9D9;      
+      background-color: #DBD9D9;
     }
 
     a img {
@@ -260,3 +341,7 @@ html {
     }
 
   }
+
+  .shopname {
+    color: lightgrey;
+}
